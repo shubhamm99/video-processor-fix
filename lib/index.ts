@@ -6,8 +6,8 @@ import { version } from './utils/version';
 
 if (typeof window !== 'undefined') {
   window.Twilio = window.Twilio || {};
-  window.Twilio.VideoProcessors = {
-    ...window.Twilio.VideoProcessors,
+  window.Twilio.Diagnostics = {
+    ...window.Twilio.Diagnostics,
     GaussianBlurBackgroundProcessor,
     ImageFit,
     Pipeline,

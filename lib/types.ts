@@ -6,8 +6,8 @@
     chrome: any;
     createTwilioTFLiteModule: () => Promise<any>;
     createTwilioTFLiteSIMDModule: () => Promise<any>;
-    OffscreenCanvas: typeof OffscreenCanvas;
-    Twilio: Object & { VideoProcessors?: any };
+    OffscreenCanvas: OffscreenCanvas;
+    Twilio: Object & { Diagnostics?: any; };
   }
 }
 
