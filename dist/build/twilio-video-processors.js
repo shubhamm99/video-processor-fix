@@ -1,4 +1,4 @@
-/*! twilio-video-processors.js 2.0.1-dev
+/*! twilio-video-processors.js 2.0.0
 
 The following license applies to all parts of this software except as
 documented below.
@@ -80,7 +80,7 @@ var version_1 = require("./utils/version");
 Object.defineProperty(exports, "version", { enumerable: true, get: function () { return version_1.version; } });
 if (typeof window !== 'undefined') {
     window.Twilio = window.Twilio || {};
-    window.Twilio.Diagnostics = __assign(__assign({}, window.Twilio.Diagnostics), { GaussianBlurBackgroundProcessor: GaussianBlurBackgroundProcessor_1.GaussianBlurBackgroundProcessor,
+    window.Twilio.VideoProcessors = __assign(__assign({}, window.Twilio.VideoProcessors), { GaussianBlurBackgroundProcessor: GaussianBlurBackgroundProcessor_1.GaussianBlurBackgroundProcessor,
         ImageFit: types_1.ImageFit,
         Pipeline: types_1.Pipeline,
         isSupported: support_1.isSupported,
@@ -543,8 +543,7 @@ var types_1 = require("../../types");
  *   createLocalVideoTrack({
  *     // Increasing the capture resolution decreases the output FPS
  *     // especially on browsers that do not support SIMD
- *     // such as desktop Safari and iOS browsers, or on Chrome
- *     // with capture resolutions above 640x480 for webgl2.
+ *     // such as desktop Safari and iOS browsers
  *     width: 640,
  *     height: 480,
  *     // Any frame rate above 24 fps on desktop browsers increase CPU
@@ -659,8 +658,7 @@ var types_1 = require("../../types");
  *     createLocalVideoTrack({
  *       // Increasing the capture resolution decreases the output FPS
  *       // especially on browsers that do not support SIMD
- *       // such as desktop Safari and iOS browsers, or on Chrome
- *       // with capture resolutions above 640x480 for webgl2.
+ *       // such as desktop Safari and iOS browsers
  *       width: 640,
  *       height: 480,
  *       // Any frame rate above 24 fps on desktop browsers increase CPU
@@ -1719,6 +1717,6 @@ exports.version = void 0;
 /**
  * The current version of the library.
  */
-exports.version = '2.0.1-dev';
+exports.version = '2.0.0';
 
 },{}]},{},[2]);

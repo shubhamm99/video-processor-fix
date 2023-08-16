@@ -1,5 +1,0 @@
-{
-  "watch": ["lib"],
-  "ext": "ts",
-  "exec": "./node_modules/.bin/tsc && npm run build:js && npm run build:js-assets"
-}
